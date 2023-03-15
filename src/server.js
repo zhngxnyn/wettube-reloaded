@@ -18,8 +18,8 @@ app.use(logger);
 // application 설정
 
 app.use("/", globalRouter);
-app.use("/videos", videoRouter);
 app.use("/users", userRouter);
+app.use("/videos", videoRouter);
 
 // middleware를 use하는 게 먼저 오고, url의 get이 와야한다. -> 모든 url에 적용할 수 있음
 // app.use(methodLogger, routerLogger); // global middleware를 만들 수 있게 해준다.
